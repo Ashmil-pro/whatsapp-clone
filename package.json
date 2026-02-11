@@ -1,0 +1,10 @@
+{
+  "name": "calendar-reminder-caller",
+  "version": "1.0.0",
+  "description": "Schedule reminders that send messages and trigger calls on deadlines.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  }
+}

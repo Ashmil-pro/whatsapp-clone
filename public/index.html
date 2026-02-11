@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Calendar Reminder Caller</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Calendar Reminder Caller</h1>
+    <p>Schedule tasks from your calendar and receive an SMS reminder + deadline call.</p>
+
+    <section class="card">
+      <h2>Schedule a task</h2>
+      <form id="event-form">
+        <label>
+          Task title
+          <input type="text" id="title" required placeholder="Submit project report" />
+        </label>
+        <label>
+          Deadline
+          <input type="datetime-local" id="deadline" required />
+        </label>
+        <label>
+          Phone number
+          <input type="tel" id="phoneNumber" required placeholder="+15551234567" />
+        </label>
+        <button type="submit">Save schedule</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Upcoming tasks</h2>
+      <ul id="events"></ul>
+    </section>
+
+    <section class="card">
+      <h2>Reminder and call log</h2>
+      <ul id="logs"></ul>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
